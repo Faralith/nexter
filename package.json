@@ -1,0 +1,34 @@
+{
+  "name": "nexter",
+  "version": "2.0.0",
+  "description": "Nexter webpage",
+  "main": "index.html",
+  "scripts": {
+    "watch": "node-sass --watch sass/main.scss css/style.css --output-style nested",
+    "dev-server": "live-server",
+    "dev": "npm-run-all --parallel dev-server watch",
+    "compile": "node-sass sass/main.scss css/style.comp.css",
+    "prefix": "postcss --use autoprefixer -b \"last 5 versions\" css/style.comp.css -o css/style.prefix.css --no-map",
+    "compress": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "remove": "rm css/style.comp.css css/style.prefix.css ",
+    "build": "npm-run-all compile prefix compress remove"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faralith/nexter.git"
+  },
+  "author": "Fred Shaw-Matthews",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faralith/nexter/issues"
+  },
+  "homepage": "https://github.com/Faralith/nexter",
+  "devDependencies": {
+    "autoprefixer": "^9.7.5",
+    "concat": "^1.0.3",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
+  }
+}
