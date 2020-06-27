@@ -1,52 +1,55 @@
-:root {
-  //Colours
-  --primary-colour: #eb2f64;
-  --primary-colour-light: #FF3366;
-  --primary-colour-dark: #BA265D;
+//Colours
+$primary-colour: #c69963;
+//$primary-colour-light: #FF3366;
+$primary-colour-dark: #b28451;
 
-  --secondary-colour: #4682b4;
-  --secondary-colour-light: #2998ff;
-  --secondary-colour-dark: #5643fa;
+$secondary-colour: #101d2c;
+//$secondary-colour-light: #2998ff;
+//$secondary-colour-dark: #5643fa;
 
-  --tertiary-colour: #f85615;
-  --tertiary-colour-light: #ffb900;
-  --tertiary-colour-dark: #ff7730;
+$tertiary-colour: #6d5d4b;
+//$tertiary-colour-light: #ffb900;
+$tertiary-colour-dark: #54483a;
 
-  --grey-light-1: #faf9f9;
-  --grey-light-2: #f4f2f2;
-  --grey-light-3: #f0eeee;
-  --grey-light-4: #cccccc;
+$grey-light-1: #f9f7f6;
+$grey-light-2: #aaa;
+//$grey-light-3: #f0eeee;
+//$grey-light-4: #cccccc;
 
-  --grey-dark-1: #999999;
-  --grey-dark-2: #777777;
-  --grey-dark-3: #555555;
-  --grey-dark-3: #333333;
-  
-  --white: #ffffff;
-  --black: #000000;
+$grey-dark-1: #999999;
+$grey-dark-2: #777777;
+//$grey-dark-3: #555555;
+//$grey-dark-3: #333333;
 
-  //Shadows
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
-  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+$white: #ffffff;
+$black: #000000;
 
-  //Border
-  --line: 1px solid var(--grey-light-2);
+//Fonts
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
 
-  //Font
-  --default-font-size: 1.6rem;
+//Shadows
+$shadow-dark: 0 2rem 6rem rgba(0,0,0,.5);
+$shadow-medium: 0 2rem 5rem rgba(0,0,0,.3);
+$shadow-light: 0 2rem 4rem rgba(0,0,0,.1);
 
-  //Container widths
-  --container-width-xl: 114rem;
-  --container-width-lg: 960rem;
-  --container-width-md: 720rem;
-  --container-width-sm: 54rem;
+//Border
+$line: 1px solid var($grey-light-2);
 
-  //Border radius variables
-  --border-radius-sm: .5rem;
-  --border-radius-md: 2rem;
-  --border-radius-lg: 5rem;
-  --border-radius-xl: 10rem;
-}
+//Font
+$default-font-size: 1.6rem;
+
+//Container widths
+$container-width-xl: 114rem;
+$container-width-lg: 960rem;
+$container-width-md: 720rem;
+$container-width-sm: 54rem;
+
+//Border radius variables
+$border-radius-sm: .5rem;
+$border-radius-md: 2rem;
+$border-radius-lg: 5rem;
+$border-radius-xl: 10rem;
 
 /** Breakpoints
 xs: 448px / 16 = 28em

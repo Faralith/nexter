@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "watch": "node-sass --watch sass/main.scss css/style.css --output-style nested",
-    "dev-server": "live-server",
+    "dev-server": "live-server --browser=firefox",
     "dev": "npm-run-all --parallel dev-server watch",
     "compile": "node-sass sass/main.scss css/style.comp.css",
     "prefix": "postcss --use autoprefixer -b \"last 5 versions\" css/style.comp.css -o css/style.prefix.css --no-map",

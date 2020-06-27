@@ -7,8 +7,8 @@
 }
 
 ::selection {
-  background: var(--primary-colour);
-  color: var(--white);
+  background: $primary-colour;
+  color: $white;
 }
 
 html {
