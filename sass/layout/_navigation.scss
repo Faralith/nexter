@@ -1,5 +1,48 @@
 .sidebar{
   background-color: $primary-colour;
   grid-column: sidebar-start/sidebar-end;
-  grid-row: 1/-1;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint-below(lg) {
+    grid-column:  1 / -1;
+    grid-row: 1 / 2;
+    justify-content: flex-end;
+  }
+}
+
+.nav-btn{
+  border: none;
+  border-radius: none;
+  background-color: $white;
+  height: .2rem;
+  width: 4rem;
+  margin-top: 4rem;
+  position: relative;
+  cursor: pointer;
+
+  @include breakpoint-below(lg) {
+    margin-top: 3rem;
+    margin-right: 3rem;
+  }
+
+  &::before,
+  &::after{
+    content: "";
+    background-color: $white;
+    height: .2rem;
+    width: 4rem;
+    display: block;
+    position: absolute;
+  }
+
+  &::before{
+    top:-1rem;
+  }
+
+  &::after{
+    top:1rem;
+  }
+
 }

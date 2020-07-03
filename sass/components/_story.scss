@@ -7,6 +7,12 @@
     grid-template-rows: repeat(6, 1fr);
     align-items: center;
     background-image: linear-gradient(rgba($primary-colour, .5), rgba($primary-colour, .5)), url(../img/back.jpg);
+    background-size: cover;
+
+    @include breakpoint-below(md) {
+      grid-column: 1 / -1;
+      padding:6rem;
+    }
   }
 
   &__img--1{
@@ -14,6 +20,11 @@
       grid-row: 2 / 6;
       width:100%;
       box-shadow: $shadow-light;
+
+      @include breakpoint-below(md) {
+        grid-column: 1 / 5;
+        grid-row: 1 / -1;
+      }
   }
 
   &__img--2{
@@ -22,6 +33,11 @@
       grid-row: 4 / 6;
       z-index:666;
       box-shadow: $shadow-light;
+
+      @include breakpoint-below(md) {
+        grid-row: 1 / -1;
+        width:100%;
+      }
   }
 
   &__content{
@@ -32,6 +48,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @include breakpoint-below(md) {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6;
+    }
   }
 
   &__text{
